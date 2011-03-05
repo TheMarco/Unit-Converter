@@ -1,0 +1,115 @@
+#wrapper, #aboutwrapper {
+width: 1024px;
+height: 600px;
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(150,150,150,0.3)), color-stop(1,rgba(30,30,30,0.3))), url(../carbon.png);
+}
+#conversionform label {
+	width: 150px;
+	text-align: right;
+}
+#conversionform select, #cvalue {
+	width: 300px;
+}
+
+#cvalue {
+	position: relative;
+	bottom: 8px;
+	margin-left: 5px;
+}
+#conversionform {
+width: 600px;
+}
+#cvalue {
+	width: 335px;
+}
+
+#display {
+	width: 380px;
+	height: 130px;
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.39, rgb(171,199,171)),
+	    color-stop(0.67, rgb(179,203,179))
+	);
+	-webkit-box-shadow: 1px 1px 5px #333 inset, -1px -1px 1px #333, 1px 1px 1px #aaa;
+	color: #000;
+	font-family: LCDDotRegular;
+	font-size: 16px;
+	position: absolute;
+	text-shadow: 2px 2px 0px #9ebb9e;
+	right: 40px;
+	top: 85px;	
+}
+#valbox {
+	display: none;
+}
+@font-face {
+    font-family: 'LCDDotRegular';
+    src: url('../font/lcddot-webfont.eot');
+    src: url('../font/lcddot-webfont.eot?iefix') format('eot'),
+         url('../font/lcddot-webfont.woff') format('woff'),
+         url('../font/lcddot-webfont.ttf') format('truetype'),
+         url('../font/lcddot-webfont.svg#webfontacDadend') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#footer {
+	position: absolute;
+	text-align: left;
+	bottom: 0;
+}
+#fheader{
+	text-align: left;
+	margin-left: 15px;	
+}
+#hicon {
+	position: absolute;
+	z-index: 2;
+	top: 2px;
+	left: 15px;
+}
+#usevalue {
+	width: 150px;
+	position: absolute;
+	top: 270px;
+	right: 35px;
+}
+#usevalue.visible {
+	opacity: 1;
+	z-index: 1;
+    -webkit-transition: opacity 1s ease-out;
+}
+#usevalue.invisible {
+	opacity: 0;
+    -webkit-transition: opacity 1s ease-out;
+}
+#usevalue.disabled {
+	z-index: -1;
+}
+.keyrow {
+	margin-left: 168px;
+}
+.keyrow .key {
+	width: 89px;
+	float: left;
+}
+.keyrow:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.keyrow {
+	clear: both;
+}
+.keyrow.first {
+	margin-top: 50px;
+}
+
+#aboutbox {
+	width: 500px;
+	margin: 150px auto;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0.0" rim:header="RIM-Widget:rim/widget">
+  <name>Unit Converter</name>
+  <description>A simple but elegant unit converter for BlackBerry PlayBook</description>
+  <author rim:copyright="2011">Marco van Hylckama Vlieg</author>
+  <icon rim:hover="false" src="icon.png"/>
+  <icon rim:hover="true" src="icon.png"/>
+  <access uri ="*"/>
+  <content src="index.html"/>
+</widget>
