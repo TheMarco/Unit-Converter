@@ -1,46 +1,41 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-	<title>Page Title</title> 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
 	<link rel="stylesheet" href="css/jquery.mobile-1.0a3.min.css" />
 	<link rel="stylesheet" href="css/units.css" />
-	
 	<script type="text/javascript" src="javascript/jquery.js"></script>
-
 	<script type="text/javascript" src="javascript/jquery.mobile-1.0a3.min.js"></script>
 	<meta name="viewport" id="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no" />
 	<meta id="touch-event-mode" content="native"/>
-</head> 
-<body> 
-
+</head>
+<body>
 	<div data-role="page" id="wrapper" data-theme="a">
-
 		<div data-role="header">
 			<h1 id="cheader"><img id="hicon" src="iconsmall.png" alt="">Unit Converter</h1><a href="#aboutwrapper" data-icon="info" data-transition="slide" class="ui-btn-right">About</a>
 		</div>
-
-		<div data-role="content" id="conversionform">	
+		<div data-role="content" id="conversionform">
 			<div data-role="fieldcontain">
 				<p>
-				<label for="cproperty" class="select">Property:</label>
-				<select name="cproperty" id="cproperty" data-native-menu="true">
-				</select>
+					<label for="cproperty" class="select">Property:</label>
+					<select name="cproperty" id="cproperty" data-native-menu="true">
+					</select>
 				</p>
 				<p>
-				<label for="cfrom" class="select">Convert From:</label>
-				<select name="cfrom" id="cfrom" data-native-menu="true">
-				</select>
+					<label for="cfrom" class="select">Convert From:</label>
+					<select name="cfrom" id="cfrom" data-native-menu="true">
+					</select>
 				</p>
 				<p.>
 				<label for="cto" class="select">Convert To:</label>
 				<select name="cto" id="cto" data-native-menu="true">
 				</select>
-				</p>
-				<p id="valbox">
-				    <label for="cvalue">Value to convert:</label>
-				    <input type="text" name="cvalue" id="cvalue" value=""  />
-				</p>
-				<div id="keyboard">
+			</p>
+			<p id="valbox">
+				<label for="cvalue">Value to convert:</label>
+				<input type="text" name="cvalue" id="cvalue" value="" />
+			</p>
+			<div id="keyboard">
 				<div class="keyrow first">
 					<div class="key">
 						<button data-theme="e" class="ui-btn-hidden">7</button>
@@ -68,7 +63,7 @@
 					<div class="key">
 						<button data-theme="e" class="ui-btn-hidden">&#8592;</button>
 					</div>
-				</div>	
+				</div>
 				<div class="keyrow">
 					<div class="key">
 						<button data-theme="e" class="ui-btn-hidden">1</button>
@@ -93,33 +88,31 @@
 					<div class="key">
 						<button data-theme="e" class="ui-btn-hidden">.</button>
 					</div>
-				</div>		
-				</div>	
+				</div>
 			</div>
 		</div>
-		<div data-role="content" id="display">
-			Waiting for input...
-		</div>
-		<div id="usevalue" class="invisible disabled">
-		<button data-theme="b" name="submit" value="submit-value" class="ui-btn-hidden" data-icon="arrow-d" data-iconpos="right">Use result</button>
-		</div>
 	</div>
-	<div data-role="page" id="aboutwrapper" data-theme="a">
-
-		<div data-role="header">
-			<a href="#wrapper" data-icon="arrow-l" data-direction="reverse" class="ui-btn-left">Back</a><h1 id="cheader">About Unit Converter</h1>
-		</div>
-		<div data-role="content" id="aboutbox">
-			<div id="iconholder"></div>
-			<div id="aboutcontent">
-				<h3>Unit Converter for BlackBerry PlayBook&trade;</h3>
-				<p>&copy; 2011 by Marco van Hylckama Vlieg<br />
+	<div data-role="content" id="display">
+		Waiting for input...
+	</div>
+	<div id="usevalue" class="invisible disabled">
+		<button data-theme="b" name="submit" value="submit-value" class="ui-btn-hidden" data-icon="arrow-d" data-iconpos="right">Use result</button>
+	</div>
+</div>
+<div data-role="page" id="aboutwrapper" data-theme="a">
+	<div data-role="header">
+		<a href="#wrapper" data-icon="arrow-l" data-direction="reverse" class="ui-btn-left">Back</a><h1 id="cheader">About Unit Converter</h1>
+	</div>
+	<div data-role="content" id="aboutbox">
+		<div id="iconholder"></div>
+		<div id="aboutcontent">
+			<h3>Unit Converter for BlackBerry PlayBook&trade;</h3>
+			<p>&copy; 2011 by Marco van Hylckama Vlieg<br />
 				<p>All Rights Reserved.</p>
 				<p>This software is provided 'as is'. There is NO WARRANTY. Use at your own risk.</p>
 				<p>Licenced under GPL (http://www.gnu.org/licenses/gpl.html)</p>
 			</div>
 		</div>
-
 	</div>
 	<script type="text/javascript" src="javascript/convertercore.js"></script>
 </body>
