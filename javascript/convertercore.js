@@ -193,16 +193,20 @@ Converter = {
 			that.opFinished = true;
 		});
 
-		$('#usevalue').click(function(e) {
+		function handleUseValue(e) {
 			e.preventDefault();
 			$('#cvalue').val(that.lastResult);
 			$('#display').html($('#cvalue').val());
 			$('#usevalue').attr('class', 'visible');
 			$('#usevalue').attr('class', 'invisible');
 			window.setTimeout(function(){$('#usevalue').addClass('disabled');}, 1000);
-		});
+		}
 
-		$('#keyboard').tap(function(e) {
+		document.getElementById('usevalue').ontouchend = function(e) {
+			handleUseValue(e);
+		}
+
+		function handleKey(e) {
 
 			var key = $(e.target).html();	
 			if(that.opFinished && key !== 'go') {
@@ -241,7 +245,10 @@ Converter = {
 			else {
 				$('#display').html($('#cvalue').val());
 			}
-		});
+		}
+		document.getElementById('keyboard').ontouchend = function(e) {
+			handleKey(e);
+		}
 	}
 };
 

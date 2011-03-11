@@ -10,7 +10,6 @@ background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb
 #conversionform select, #cvalue {
 	width: 300px;
 }
-
 #cvalue {
 	position: relative;
 	bottom: 8px;
@@ -22,7 +21,12 @@ width: 600px;
 #cvalue {
 	width: 335px;
 }
-
+@font-face {
+    font-family: 'LCDDotRegular';
+    src: url('../font/lcddot-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 #display {
 	width: 380px;
 	height: 130px;
@@ -44,12 +48,6 @@ width: 600px;
 }
 #valbox {
 	display: none;
-}
-@font-face {
-    font-family: 'LCDDotRegular';
-    src: url('../font/lcddot-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 #footer {
 	position: absolute;
