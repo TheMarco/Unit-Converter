@@ -6,10 +6,10 @@ Converter = {
 		this.unit = new Array();
 		this.factor = new Array();
 		this.property[0] = "Acceleration";
-		this.unit[0] = new Array("Meter/sq.sec (m/sec^2)", "Foot/sq.sec (ft/sec^2)", "G (g)", "Galileo (gal)", "Inch/sq.sec (in/sec^2)", "Yard/sq.sec (yd/sec^2)");
+		this.unit[0] = new Array("Meter/sq.sec (m/sec&sup2;)", "Foot/sq.sec (ft/sec&sup2;)", "G (g)", "Galileo (gal)", "Inch/sq.sec (in/sec&sup2;)", "Yard/sq.sec (yd/sec&sup2;)");
 		this.factor[0] = new Array(1, .3048, 9.806650, .01, 2.54E-02, 0.9144);
 		this.property[1] = "Area";
-		this.unit[1] = new Array("Square meter (m^2)", "Acre (acre)", "Are", "Barn (barn)", "Hectare", "Rood", "Square centimeter", "Square kilometer", "Circular mil", "Square foot (ft^2)", "Square inch (in^2)", "Square mile (mi^2)", "Square yard (yd^2)", "Arpent", "Cuerda", "Plaza", "Square Perch/Pole/Rod", "Strema");
+		this.unit[1] = new Array("Square meter (m&sup2;)", "Acre (acre)", "Are", "Barn (barn)", "Hectare", "Rood", "Square centimeter", "Square kilometer", "Circular mil", "Square foot (ft&sup2;)", "Square inch (in&sup2;)", "Square mile (mi&sup2;)", "Square yard (yd&sup2;)", "Arpent", "Cuerda", "Plaza", "Square Perch/Pole/Rod", "Strema");
 		this.factor[1] = new Array(1, 4046.856, 100, 1E-28, 10000, 1011.71413184285, .0001, 1000000, 5.067075E-10, 9.290304E-02, 6.4516E-04, 2589988, .8361274, 4041.28224, 3930.395625, 6400, 25.29285264, 1000);
 		this.property[2] = "Torque";
 		this.unit[2] = new Array("Newton-meter (N m)", "Dyne-centimeter(dy cm)", "Kgrf-meter (kgf m)", "lbf-inch (lbf in)", "lbf-foot (lbf ft)");
@@ -30,7 +30,7 @@ Converter = {
 		this.unit[7] = new Array("Meter (m)", "Angstrom (A')", "Astronomical unit (AU)", "Caliber (cal)", "Centimeter (cm)", "Kilometer (km)", "Ell", "Em", "Fathom", "Furlong", "Fermi (fm)", "Foot (ft)", "Inch (in)", "League (int'l)", "League (UK)", "Light year (LY)", "Micrometer (mu-m)", "Mil", "Millimeter (mm)", "Nanometer (nm)", "Mile (int'l nautical)", "Mile (UK nautical)", "Mile (US nautical)", "Mile (US statute)", "Parsec", "Pica (printer)", "Picometer (pm)", "Point (pt)", "Rod", "Yard (yd)");
 		this.factor[7] = new Array(1, 1E-10, 1.49598E11, .000254, .01, 1000, 1.143, 4.2323E-03, 1.8288, 201.168, 1E-15, .3048, .0254, 5556, 5556, 9.46055E+15, .000001, .0000254, .001, 1E-9, 1852, 1853.184, 1852, 1609.344, 3.08374E+16, 4.217518E-03, 1E-12, .0003514598, 5.0292, .9144);
 		this.property[8] = "Light";
-		this.unit[8] = new Array("Lumen/sq.meter (Lu/m^2)", "Lumen/sq.centimeter", "Lumen/sq.foot", "Foot-candle (ft-cdl)", "Foot-lambert", "Candela/sq.meter", "Candela/sq.centimeter", "Lux (lux)", "Phot");
+		this.unit[8] = new Array("Lumen/sq.meter (lm/m&sup2;)", "Lumen/sq.centimeter", "Lumen/sq.foot", "Foot-candle (ft-cdl)", "Foot-lambert", "Candela/sq.meter", "Candela/sq.centimeter", "Lux (lux)", "Phot");
 		this.factor[8] = new Array(1, 10000, 10.76391, 10.76391, 10.76391, 3.14159250538575, 31415.9250538576, 1, 10000);
 		this.property[9] = "Mass";
 		this.unit[9] = new Array("Kilogram (kgr)", "Gram (gr)", "Milligram (mgr)", "Microgram (mu-gr)", "Carat (metric)(ct)", "Hundredweight (long)", "Hundredweight (short)", "Pound mass (lbm)", "Pound mass (troy)", "Ounce mass (ozm)", "Ounce mass (troy)", "Slug", "Ton (assay)", "Ton (long)", "Ton (short)", "Ton (metric)", "Tonne");
@@ -39,7 +39,7 @@ Converter = {
 		this.unit[10] = new Array("Kilogram/second (kgr/sec)", "Pound mass/sec (lbm/sec)", "Pound mass/min (lbm/min)");
 		this.factor[10] = new Array(1, .4535924, .007559873);
 		this.property[11] = "Density & Mass capacity";
-		this.unit[11] = new Array("Kilogram/cub.meter", "Grain/galon", "Grams/cm^3 (gr/cc)", "Pound mass/cubic foot", "Pound mass/cubic-inch", "Ounces/gallon (UK,liq)", "Ounces/gallon (US,liq)", "Ounces (mass)/inch", "Pound mass/gal (UK,liq)", "Pound mass/gal (US,liq)", "Slug/cubic foot", "Tons (long,mass)/cub.yard");
+		this.unit[11] = new Array("Kilogram/cub.meter", "Grain/galon", "Grams/cm&sup3; (gr/cc)", "Pound mass/cubic foot", "Pound mass/cubic-inch", "Ounces/gallon (UK,liq)", "Ounces/gallon (US,liq)", "Ounces (mass)/inch", "Pound mass/gal (UK,liq)", "Pound mass/gal (US,liq)", "Slug/cubic foot", "Tons (long,mass)/cub.yard");
 		this.factor[11] = new Array(1, .01711806, 1000, 16.01846, 27679.91, 6.236027, 7.489152, 1729.994, 99.77644, 119.8264, 515.379, 1328.939);
 		this.property[12] = "Power";
 		this.unit[12] = new Array("Watt (W)", "Kilowatt (kW)", "Megawatt (MW)", "Milliwatt (mW)", "BTU (SI)/hour", "BTU (thermo)/second", "BTU (thermo)/minute", "BTU (thermo)/hour", "Calorie (thermo)/second", "Calorie (thermo)/minute", "Erg/second", "Foot-pound force/hour", "Foot-pound force/minute", "Foot-pound force/second", "Horsepower(550 ft lbf/s)", "Horsepower (electric)", "Horsepower (boiler)", "Horsepower (metric)", "Horsepower (UK)", "Kilocalorie (thermo)/min", "Kilocalorie (thermo)/sec");
@@ -64,7 +64,7 @@ Converter = {
 		this.unit[17] = new Array("Newton-second/meter", "Centipoise", "Centistoke", "Sq.foot/second", "Poise", "Poundal-second/sq.foot", "Pound mass/foot-second", "Pound force-second/sq.foot", "Rhe", "Slug/foot-second", "Stoke");
 		this.factor[17] = new Array(1, .001, .000001, 9.290304E-02, .1, 1.488164, 1.488164, 47.88026, 10, 47.88026, .0001);
 		this.property[18] = "Volume & Capacity";
-		this.unit[18] = new Array("Cubic Meter (m^3)", "Cubic centimeter", "Cubic millimeter", "Acre-foot", "Barrel (oil)", "Board foot", "Bushel (US)", "Cup", "Fluid ounce (US)", "Cubic foot", "Gallon (UK)", "Gallon (US,dry)", "Gallon (US,liq)", "Gill (UK)", "Gill (US)", "Cubic inch (in^3)", "Liter (new)", "Liter (old)", "Ounce (UK,fluid)", "Ounce (US,fluid)", "Peck (US)", "Pint (US,dry)", "Pint (US,liq)", "Quart (US,dry)", "Quart (US,liq)", "Stere", "Tablespoon", "Teaspoon", "Ton (register)", "Cubic yard");
+		this.unit[18] = new Array("Cubic Meter (m&sup3;)", "Cubic centimeter", "Cubic millimeter", "Acre-foot", "Barrel (oil)", "Board foot", "Bushel (US)", "Cup", "Fluid ounce (US)", "Cubic foot", "Gallon (UK)", "Gallon (US,dry)", "Gallon (US,liq)", "Gill (UK)", "Gill (US)", "Cubic inch (in&sup3;)", "Liter (new)", "Liter (old)", "Ounce (UK,fluid)", "Ounce (US,fluid)", "Peck (US)", "Pint (US,dry)", "Pint (US,liq)", "Quart (US,dry)", "Quart (US,liq)", "Stere", "Tablespoon", "Teaspoon", "Ton (register)", "Cubic yard");
 		this.factor[18] = new Array(1, .000001, .000000001, 1233.482, .1589873, .002359737, .03523907, .0002365882, .00002957353, .02831685, .004546087, .004404884, .003785412, .0001420652, .0001182941, .00001638706, .001, .001000028, .00002841305, .00002957353, 8.8097680E-03, .0005506105, 4.7317650E-04, .001101221, 9.46353E-04, 1, .00001478676, .000004928922, 2.831685, .7645549);
 		this.property[19] = "Volume Flow";
 		this.unit[19] = new Array("Cubic meter/second", "Cubic foot/second", "Cubic foot/minute", "Cubic inches/minute", "Gallons (US,liq)/minute)");
@@ -78,19 +78,25 @@ Converter = {
 			html = html + '<option value="' + i + '">' + this.property[i] + '</option>';
 		}
 		$('#cproperty').html(html);
-
 		$('#cproperty').change(function() {
 			unit = that.unit[$('#cproperty').val()];
 			factor = that.factor[$('#cproperty').val()];
 			html = '';
-			for(i=0;i<unit.length;i++) {
-				html = html + '<option value="' + factor[i] + '">' + unit[i] + '</option>';
+			if($('#cproperty').val() == 14) {
+				for(i=0;i<that.unit[$('#cproperty').val()].length;i++) {
+					html = html + '<option value="' + factor[i] + '">' + unit[i] + '</option>';
+				}
+			}
+			else {
+				console.log($('#cproperty').val());
+				for(i=0;i<that.unit[$('#cproperty').val()].length;i++) {
+					html = html + '<option value="' + i + '">' + unit[i] + '</option>';
+				}				
 			}
 			$('#cfrom').html(html).trigger('change');
 			$('#cto').html(html).trigger('change');	
 
 		});
-
 		$('#cproperty').trigger('change');
 
 		$('#csubmit').click(function(e) {
@@ -104,7 +110,6 @@ Converter = {
 			}
 
 			var output, tempDone = false;
-
 			if($('#cfrom').val() === 'DC') {
 				switch($('#cto').val()) {
 					case 'DC' :
@@ -177,9 +182,10 @@ Converter = {
 			if(tempDone) {
 				// done already
 			}
-			else {		
-				var result = $('#cvalue').val() * $('#cfrom').val();
-				result = result / $('#cto').val();
+			else {						
+				var result = $('#cvalue').val() * that.factor[$('#cproperty').val()][$('#cfrom').val()];
+				result = result / that.factor[$('#cproperty').val()][$('#cto').val()];
+				
 			}
 			that.lastResult = (result * 10000000000000000000000000) / 10000000000000000000000000;
 			result = Math.round(result * 10000000000) / 10000000000;
@@ -187,6 +193,9 @@ Converter = {
 			output = output + $('#cvalue').val() + ' ' + $('#cfrom option[value="' + $('#cfrom').val() + '"]').html() + '<br />';
 			output = output + '==><br />';
 			output = output + result + ' ' + $('#cto option[value="' + $('#cto').val() + '"]').html();
+			output = output.replace(/\xb2/g, '<sup>2</sup>');
+			output = output.replace(/\xb3/g, '<sup>3</sup>');
+			
 			$('#display').html(output);
 			$('#usevalue').attr('class', 'invisible');
 			$('#usevalue').attr('class', 'visible');
@@ -209,6 +218,7 @@ Converter = {
 		function handleKey(e) {
 
 			var key = $(e.target).html();	
+			if(key == 'go') { return; };
 			if(that.opFinished && key !== 'go') {
 				$('#cvalue').val('');
 				that.opFinished = false;
